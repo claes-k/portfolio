@@ -3,9 +3,11 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Hej och välkommen!
 ==========================
 
-The source for this page is in `content/index.md`.
+Jag heter Claes och det här är min portfoliosida för kursen Teknisk webbdesign och användbarhet (eller bara Design) på Blekinge Tekniska Högskola, BTH.
 
-This is a sample home page written in markdown with some frontmatter defined.
+![En bild av "mig"](image/stoat_wild.jpg){.main-image}
+
+The source for this page is in `content/index.md`.
