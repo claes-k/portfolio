@@ -1,0 +1,119 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'mobile-menu';
+@import 'blockquotes';
+@import 'code';
+@import 'test';
+@import 'footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    color: $font-color;
+    font-family: 'Cardo', 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    border: 0 none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Futura', 'Arial', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.6em;
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+a {
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    padding: 3em 0 3em 3em;
+}
+
+.logo img {
+    max-width: 16vw;
+    min-width: 8vw;
+}
+
+.title {
+    padding: 3em;
+}
+
+.title * {
+    color: #fff;
+}
+
+.title p {
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+p, td, th, li, dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.main-image {
+    max-width: 20vw;
+    min-width: 10vw;
+}
+
+@import 'responsive';
