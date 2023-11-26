@@ -1,0 +1,135 @@
+/* ============================== */
+/* Base CSS */
+/* ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 18px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    border: 0 none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
+ol, ul {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    border-bottom-color: $accent-color;
+
+    &:hover {
+        color: $link-color;
+        border-bottom-color: $link-color;
+    }
+}
+
+.active a {
+    border-bottom-color: $text-color;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    // padding: 3em 0 3em 3em;
+    padding: 1.5em 0 1.5em 1.5em;
+}
+
+.logo a,
+.title a {
+    border: 0;
+}
+
+.logo img {
+    max-width: 16vw;
+    min-width: 8vw;
+}
+
+.title {
+    // padding: 3em;
+    padding: 1.5em;
+}
+
+.title * {
+    color: $text-color;
+}
+
+.title p {
+    font-style: italic;
+}
+
+.nav {
+    margin: 0 1em;
+}
+
+p {
+    margin-bottom: 1.5em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+p, td, th, li, dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.main-image {
+    max-width: 20vw;
+    min-width: 10vw;
+}
+
+.analysis-image {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}

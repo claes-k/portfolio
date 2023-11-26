@@ -11,4 +11,10 @@ Social:
     - title: Markdown
       url: https://www.markdownguide.org/basic-syntax/
       icon: fab fa-markdown
+    - title: Dark Mode
+      url: '?action=theme'
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: '?action=session_destroy'
+      icon: fas fa-trash-alt
 ---

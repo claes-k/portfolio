@@ -1,0 +1,71 @@
+/* ============================== */
+/* Responsiveness */
+/* ============================== */
+
+@media (max-width: 860px) {
+    .title,
+    .logo {
+        padding: 1rem;
+    }
+
+    .title {
+        min-width: 50%;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+        border: 0;
+    }
+
+    .js .nav-toggle {
+        display: block;
+        float: right;
+        width: 100%;
+        padding-right: 1rem;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .main {
+        width: 75vw;
+    }
+
+    .landing-page,
+    .tech-page {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .landing-page h1,
+    .tech-page h1,
+    .grid-width-1,
+    .grid-width-2,
+    .grid-width-3 {
+        grid-column: span 1;
+    }
+
+    .tech-sidebar {
+        display: none;
+    }
+}
