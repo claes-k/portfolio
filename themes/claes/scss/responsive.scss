@@ -52,11 +52,13 @@
         width: 75vw;
     }
 
+    .gallery-page,
     .landing-page,
     .tech-page {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .gallery-page h1,
     .landing-page h1,
     .tech-page h1,
     .grid-width-1,

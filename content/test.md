@@ -23,3 +23,23 @@ Description: This is a test page.
 <p class="modern">Hör nu på, goävanner, så ska jag för er berätta vad vår Emil gjorde en dag i sköna maj. Upp i Katthults flaggsång hissa han sin lille syster, stod sen lugnt og såg henne hänga där på svaj. Hujedamej, sånt barn han var,fast Ida var rätt nöjd, ty ingen annan svävat har på denne höga höjd.</p>
 
 <p class="worst-ever">Nästa hyss han gjorde var när han i grönsakssoppan dök på huvet ner og sen satt där stenhårt fast uti mor sins soppskål, ty hans öron var för stora, så det blev att fara till doktorn det med hast. Hujedamej, sånt barn han var, tror inte också ni, att den som blott en soppskål har vill ej ha gossar i?</p>
+
+## CImage Filters
+
+![Testbild](%base_url%/image/?src=movement.jpg&f=colorize,60,-60,-60,0&q=100){.movement-img}
+
+![Testbild](%base_url%/image/?src=movement.jpg&f=negate&q=50){.movement-img}
+
+![Testbild](%base_url%/image/?src=movement.jpg&convolve=draw&q=100){.movement-img}
+
+## PNG vs JPG
+
+![Testbild](%base_url%/image/?src=movement.png){.movement-img}
+
+![Testbild](%base_url%/image/?src=movement.jpg){.movement-img}
+
+![Testbild](%base_url%/image/?src=movement.png&save-as=jpg&q=20){.movement-img}
+
+![Testbild](%base_url%/image/?src=movement.png&w=1440&save-as=jpg&q=50){.movement-img}
+
+![Testbild](%base_url%/image/?src=movement.png&w=720&save-as=jpg&q=90&sharpen){.movement-img}

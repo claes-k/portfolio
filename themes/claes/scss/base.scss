@@ -12,6 +12,10 @@ html, body {
     height: 100%;
 }
 
+img, embed, object, video {
+    max-width: 100%;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     display: flex;
@@ -52,6 +56,10 @@ ol, ul {
     flex: 0 0 auto;
 }
 
+.active a {
+    border-bottom-color: $text-color;
+}
+
 a {
     color: $text-color;
     text-decoration: none;
@@ -62,10 +70,6 @@ a {
         color: $link-color;
         border-bottom-color: $link-color;
     }
-}
-
-.active a {
-    border-bottom-color: $text-color;
 }
 
 .header {
@@ -132,4 +136,9 @@ p, td, th, li, dd {
 .analysis-image {
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
+}
+
+// Remember to add alt-tags!
+img:not([alt]) {
+    outline: 4px #f00 dashed !important;
 }
