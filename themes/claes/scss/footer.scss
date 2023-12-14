@@ -4,22 +4,34 @@
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    border-top: 1px solid $text-color;
+    flex-direction: column;
+    justify-content: center;
+    // border-top: 1px solid $text-color;
     padding: 1em;
     margin-top: 3em;
+    background-image: url('../../../assets/img/wood-grain-wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: contain;
 
     a {
         color: $text-color;
     }
 
     .social {
-        font-size: 3em;
+        font-size: 2em;
+        margin-bottom: 0.25em;
     }
     
     .social a {
         text-decoration: none !important;
         border: 0;
-        margin-left: 0.2em;
+        margin: 0 0.5em;
+    }
+
+    .social,
+    .description {
+        display: flex;
+        justify-content: center;
     }
 }

@@ -1,5 +1,5 @@
 ---
-Logo: image/stoat_2988524.jpg
+Logo: image/stoat_2988524_edit.jpg
 Tagline: This is my page for the design course.
 Social:
     - title: Github repo

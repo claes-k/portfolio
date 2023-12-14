@@ -6439,8 +6439,8 @@ template {
 
 .nav ul {
   display: flex;
-  justify-content: flex-end;
-  padding: 1em 0;
+  justify-content: center;
+  padding: 0;
   list-style: none;
 }
 .nav ul li {
@@ -6527,6 +6527,10 @@ table {
 .grid-width-1 {
   grid-column: span 1;
   line-height: 0;
+}
+
+.tech-sidebar {
+  line-height: 1.5 !important;
 }
 
 .grid-width-2 {
@@ -6708,21 +6712,31 @@ table {
 /* ============================== */
 .footer {
   display: flex;
-  justify-content: space-between;
-  border-top: 1px solid rgb(240, 236, 230);
+  flex-direction: column;
+  justify-content: center;
   padding: 1em;
   margin-top: 3em;
+  background-image: url("../../../assets/img/wood-grain-wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: contain;
 }
 .footer a {
   color: rgb(240, 236, 230);
 }
 .footer .social {
-  font-size: 3em;
+  font-size: 2em;
+  margin-bottom: 0.25em;
 }
 .footer .social a {
   text-decoration: none !important;
   border: 0;
-  margin-left: 0.2em;
+  margin: 0 0.5em;
+}
+.footer .social,
+.footer .description {
+  display: flex;
+  justify-content: center;
 }
 
 /* ============================== */
@@ -6775,11 +6789,7 @@ ol, ul {
   flex: 1 0 auto;
   margin: 0 auto;
   width: 50vw;
-}
-
-.header,
-.footer {
-  flex: 0 0 auto;
+  min-width: 50vw;
 }
 
 .active a {
@@ -6791,24 +6801,41 @@ a {
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: rgb(50, 110, 90);
+  transition: all 0.3s ease-in-out;
 }
 a:hover {
   color: rgb(220, 120, 60);
   border-bottom-color: rgb(220, 120, 60);
+  transition: all 0.3s;
+}
+
+.nav a,
+.footer a {
+  position: relative;
+  top: 0;
+  transition: all 0.4s;
+}
+.nav a:hover,
+.footer a:hover {
+  top: -3px;
+  transition: all 0.4s;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .site-header {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.logo {
-  padding: 1.5em 0 1.5em 1.5em;
+.logo,
+.title {
+  padding: 20px 10px 10px;
 }
 
 .logo a,
@@ -6817,12 +6844,8 @@ a:hover {
 }
 
 .logo img {
-  max-width: 16vw;
-  min-width: 8vw;
-}
-
-.title {
-  padding: 1.5em;
+  height: 50px;
+  padding: 0;
 }
 
 .title * {
@@ -6834,7 +6857,8 @@ a:hover {
 }
 
 .nav {
-  margin: 0 1em;
+  justify-content: center;
+  margin: 0;
 }
 
 p {
@@ -6867,6 +6891,11 @@ img:not([alt]) {
 /* ============================== */
 /* Dark Mode Only */
 /* ============================== */
+.footer {
+  background-image: url("../../../assets/img/succulents-wallpaper.jpg");
+  background-position: top;
+}
+
 img {
   filter: saturate(85%) !important;
 }
@@ -6874,16 +6903,13 @@ img {
 /* ============================== */
 /* Responsiveness */
 /* ============================== */
-@media (max-width: 860px) {
-  .title,
-  .logo {
-    padding: 1rem;
-  }
+@media (max-width: 880px) {
   .title {
     min-width: 50%;
   }
   .logo {
-    max-width: 30%;
+    min-width: 90px;
+    padding: 20px 10px 10px 20px;
   }
   .header {
     flex-direction: column;
@@ -6898,7 +6924,6 @@ img {
     text-align: center;
   }
   .nav ul li a {
-    display: block;
     padding: 0.5em 0;
     border: 0;
   }
@@ -6906,9 +6931,10 @@ img {
     display: block;
     float: right;
     width: 100%;
-    padding-right: 1rem;
+    padding-top: 1em;
+    padding-right: 1em;
     font-size: 1.5rem;
-    line-height: 2em;
+    line-height: 1em;
     text-align: right;
     cursor: pointer;
   }

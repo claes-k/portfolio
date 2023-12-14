@@ -49,11 +49,7 @@ ol, ul {
     flex: 1 0 auto;
     margin: 0 auto;
     width: 50vw;
-}
-
-.header,
-.footer {
-    flex: 0 0 auto;
+    min-width: 50vw;
 }
 
 .active a {
@@ -65,26 +61,43 @@ a {
     text-decoration: none;
     border-bottom: 2px solid;
     border-bottom-color: $accent-color;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         color: $link-color;
         border-bottom-color: $link-color;
+        transition: all 0.3s;
+    }
+}
+
+.nav a,
+.footer a {
+    position: relative;
+    top: 0;
+    transition: all 0.4s;
+    
+    &:hover {
+        top: -3px;
+        transition: all 0.4s;
     }
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    // border-bottom: 1px solid $text-color;
 }
 
 .site-header {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.logo {
-    // padding: 3em 0 3em 3em;
-    padding: 1.5em 0 1.5em 1.5em;
+.logo,
+.title {
+    padding: 20px 10px 10px;
 }
 
 .logo a,
@@ -93,13 +106,8 @@ a {
 }
 
 .logo img {
-    max-width: 16vw;
-    min-width: 8vw;
-}
-
-.title {
-    // padding: 3em;
-    padding: 1.5em;
+    height: 50px;
+    padding: 0;
 }
 
 .title * {
@@ -111,7 +119,8 @@ a {
 }
 
 .nav {
-    margin: 0 1em;
+    justify-content: center;
+    margin: 0;
 }
 
 p {
